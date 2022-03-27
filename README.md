@@ -21,21 +21,20 @@ The name of the folder these directories are located in does not matter.
 
 Then comes a tedious part of renaming some files.
 
-From OpenIV, the song names are named only with [SONGNAME], so for each song, you'll have to rename it to this:
-`SONG				=	SONG_[SONGNAME]`
-`INTRO TO SONG		=	INTRO_[SONGNAME]_[NUMBER]`
+From OpenIV, the song names are named only with [SONGNAME], so for each song, you'll have to rename it to this:<br/>`SONG				=	SONG_[SONGNAME]`<br/>
+`INTRO TO SONG		=	INTRO_[SONGNAME]_[NUMBER]`<br/>
 
 These, you can export directly from OpenIV without the need to rename:
 
-`STINGER				=	ID_[NUMBER]`
+`STINGER				=	ID_[NUMBER]`<br/>
 
-`GENERAL QUOTE		=	GENERAL_[NUMBER] or MONO_SOLO_[NUMBER]`
-`MORNING				=	MORNING_[NUMBER]`
-`EVENING				=	EVENING_[NUMBER]`
-`TO ADVERTISEMENT	=	TO_AD_[NUMBER]`
-`TO NEWS				=	TO_NEWS_[NUMBER]`
-`ADVERTISEMENTS		= 	All in folder RADIO_ADVERTS`
-`NEWS				=	All in folder RADIO_NEWS`
+`GENERAL QUOTE		=	GENERAL_[NUMBER] or MONO_SOLO_[NUMBER]`<br/>
+`MORNING				=	MORNING_[NUMBER]`<br/>
+`EVENING				=	EVENING_[NUMBER]`<br/>
+`TO ADVERTISEMENT	=	TO_AD_[NUMBER]`<br/>
+`TO NEWS				=	TO_NEWS_[NUMBER]`<br/>
+`ADVERTISEMENTS		= 	All in folder RADIO_ADVERTS`<br/>
+`NEWS				=	All in folder RADIO_NEWS`<br/>
 
 #### Step 4: Configuring the app
 
