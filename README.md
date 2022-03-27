@@ -11,7 +11,7 @@ I have a pre-built version here: [here](/built_application/). You can download t
 
 #### Step 2: Extracting audio files
 
-To use the application, you have to export all the audio files from GTA V with [OpenIV](https://ntscorp.ru/ovi/setup/ovisetup.exe) (click for direct download). The radio files are located in GTA V/x64/audio/sfx/. You will need to export all the audio files from all the .rpf archives starting with RADIO_
+To use the application, you have to export all the audio files from GTA V with [OpenIV](https://ntscorp.ru/ovi/setup/ovisetup.exe) (click for direct download). The radio files are located in GTA V/x64/audio/sfx/. You will need to export all the audio files from all the .rpf archives starting with RADIO_ as .WAV audio files.
 
 Once exported, you need to put them in folders with the same names they have as .rpf archives. You will end up with this folder structure:
 
@@ -49,7 +49,11 @@ Launching the app will give you this screen:
 
 ![](/documents/screenshots/launch_app.PNG)
 
-First, you'll have to click browse to find the folder where all the audio files are located. Now, you can test the application and see if it works. You don't have to configure any further to get a good experience, but you can. If you press "Toggle display settings", you'll get some sliders to set probability of categories occuring. You can also save the settings. This will save these items to a text file for you to be able to load later:
+First, you'll have to click browse to find the folder where all the audio files are located. Now, you can test the application and see if it works. You don't have to configure any further to get a good experience, but you can. If you press "Toggle display settings", you'll get some sliders to set probability of categories occuring. 
+
+![](/documents/screenshots/settings.PNG)
+
+You can also save the settings. This will save these items to a text file for you to be able to load later:
 
 - Location of radio folder
 - Probability of all the items
