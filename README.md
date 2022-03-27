@@ -13,7 +13,7 @@ I have a pre-built version here: [here](/built_application/). You can download t
 
 To use the application, you have to export all the audio files from GTA V with [OpenIV](https://ntscorp.ru/ovi/setup/ovisetup.exe) (click for direct download). The radio files are located in GTA V/x64/audio/sfx/. You will need to export all the audio files from all the .rpf archives starting with RADIO_ as .WAV audio files.
 
-Once exported, you need to put them in folders with the same names they have as .rpf archives. You will end up with this folder structure:
+Once exported, you need to put them in folders with the same names they have as .rpf archives. In a radio folder, there should be no subdirectories, only loose audio files. You will end up with this folder structure:
 
 ![](/documents/screenshots/folder_structure.PNG/)
 
