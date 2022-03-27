@@ -1,6 +1,8 @@
 # GTARadioForDesktop
 Ever wanted the radio from GTA V in a desktop application for Windows? Probably not, but here it is anyway!
 
+Disclaimer: This was made by a first year IT student. If you find any bugs or glitches, you can create an issue. For feature requests or anything else, 
+
 ### Installing / using the application
 
 #### Step 1: Getting the app
@@ -21,23 +23,40 @@ The name of the folder these directories are located in does not matter.
 
 Then comes a tedious part of renaming some files.
 
-From OpenIV, the song names are named only with [SONGNAME], so for each song, you'll have to rename it to this:<br/>`SONG				=	SONG_[SONGNAME]`<br/>
-`INTRO TO SONG		=	INTRO_[SONGNAME]_[NUMBER]`<br/>
+From OpenIV, the song names are named only with [SONGNAME], so for each song, you'll have to rename it to this:
+
+| Type of file  | Name from OpenIV      | Name required               |
+| ------------- | --------------------- | --------------------------- |
+| Song          | `[SONGNAME]`          | `SONG_[SONGNAME]`           |
+| Intro to song | `[SONGNAME]_[NUMBER]` | `INTRO_[SONGNAME]_[NUMBER]` |
 
 These, you can export directly from OpenIV without the need to rename:
 
-`STINGER				=	ID_[NUMBER]`<br/>
-
-`GENERAL QUOTE		=	GENERAL_[NUMBER] or MONO_SOLO_[NUMBER]`<br/>
-`MORNING				=	MORNING_[NUMBER]`<br/>
-`EVENING				=	EVENING_[NUMBER]`<br/>
-`TO ADVERTISEMENT	=	TO_AD_[NUMBER]`<br/>
-`TO NEWS				=	TO_NEWS_[NUMBER]`<br/>
-`ADVERTISEMENTS		= 	All in folder RADIO_ADVERTS`<br/>
-`NEWS				=	All in folder RADIO_NEWS`<br/>
+| Type of file            | Name from OpenIV and usable in the app     |
+| ----------------------- | ------------------------------------------ |
+| Stinger                 | `ID_[NUMBER]`                              |
+| General quote           | `GENERAL_[NUMBER]` or `MONO_SOLO_[NUMBER]` |
+| Morning quote           | `MORNING_[NUMBER]`                         |
+| Evening quote           | `EVENING_[NUMBER]`                         |
+| Intro for advertisement | `TO_AD_[NUMBER]`                           |
+| Intro for news items    | `TO_NEWS_[NUMBER]`                         |
+| Advertisements          | All files in folder `RADIO_ADVERTS`        |
+| News items              | All files in folder `RADIO_NEWS`           |
 
 #### Step 4: Configuring the app
 
 Launching the app will give you this screen:
 
 ![](/documents/screenshots/launch_app.PNG)
+
+First, you'll have to click browse to find the folder where all the audio files are located. Now, you can test the application and see if it works. You don't have to configure any further to get a good experience, but you can. If you press "Toggle display settings", you'll get some sliders to set probability of categories occuring. You can also save the settings. This will save these items to a text file for you to be able to load later:
+
+- Location of radio folder
+- Probability of all the items
+- Preferred volume
+
+You can also edit this text file.
+
+#### Step 5: Enjoy!
+
+After all this work you can finally enjoy the radio stations from GTA V without the eternal loading screens. Select a radio from the dropdown and click "Start". If you press "Skip", the next item plays.
