@@ -5,7 +5,7 @@ Ever wanted the radio from GTA V in a desktop application for Windows? Probably 
 
 #### Step 1: Getting the app
 
-I have a pre-built version here: [here](/built_application/program/). You can download this directory or the .zip and put the program files in any random folder. The executable is GrandTheftAutoRadioForDesktop.exe
+I have a pre-built version here: [here](/built_application/). You can download this directory or the .zip and put the program files in any random folder. The executable is GrandTheftAutoRadioForDesktop.exe
 
 #### Step 2: Extracting audio files
 
@@ -22,19 +22,20 @@ The name of the folder these directories are located in does not matter.
 Then comes a tedious part of renaming some files.
 
 From OpenIV, the song names are named only with [SONGNAME], so for each song, you'll have to rename it to this:
-`SONG				=	SONG_[SONGNAME]
-INTRO TO SONG		=	INTRO_[SONGNAME]_[NUMBER]`
+`SONG				=	SONG_[SONGNAME]`
+`INTRO TO SONG		=	INTRO_[SONGNAME]_[NUMBER]`
 
 These, you can export directly from OpenIV without the need to rename:
 
-`STINGER				=	ID_[NUMBER]
-GENERAL QUOTE		=	GENERAL_[NUMBER] or MONO_SOLO_[NUMBER]
-MORNING				=	MORNING_[NUMBER]
-EVENING				=	EVENING_[NUMBER]
-TO ADVERTISEMENT	=	TO_AD_[NUMBER]
-TO NEWS				=	TO_NEWS_[NUMBER]
-ADVERTISEMENTS		= 	All in folder RADIO_ADVERTS
-NEWS				=	All in folder RADIO_NEWS`
+`STINGER				=	ID_[NUMBER]`
+
+`GENERAL QUOTE		=	GENERAL_[NUMBER] or MONO_SOLO_[NUMBER]`
+`MORNING				=	MORNING_[NUMBER]`
+`EVENING				=	EVENING_[NUMBER]`
+`TO ADVERTISEMENT	=	TO_AD_[NUMBER]`
+`TO NEWS				=	TO_NEWS_[NUMBER]`
+`ADVERTISEMENTS		= 	All in folder RADIO_ADVERTS`
+`NEWS				=	All in folder RADIO_NEWS`
 
 #### Step 4: Configuring the app
 
