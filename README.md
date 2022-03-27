@@ -1,7 +1,7 @@
 # GTARadioForDesktop
 Ever wanted the radio from GTA V in a desktop application for Windows? Probably not, but here it is anyway!
 
-Disclaimer: This was made by a first year IT student. If you find any bugs or glitches, you can create an issue. For feature requests or anything else, 
+Disclaimer: This was made by a first year IT student. For bugs, glitches, feature requests and anything else, you can open a GitHub issue.
 
 ### Installing / using the application
 
@@ -60,3 +60,5 @@ You can also edit this text file.
 #### Step 5: Enjoy!
 
 After all this work you can finally enjoy the radio stations from GTA V without the eternal loading screens. Select a radio from the dropdown and click "Start". If you press "Skip", the next item plays.
+
+![](/documents/screenshots/playing.PNG)
