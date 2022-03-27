@@ -1,0 +1,21 @@
+//These, you need to rename for the application to work:
+SONG				=	SONG_[SONGNAME]
+INTRO TO SONG			=	INTRO_[SONGNAME]_[NUMBER]
+
+//These, you can export directly from OpenIV without the need to rename:
+STINGER				=	ID_[NUMBER]
+GENERAL QUOTE			=	GENERAL_[NUMBER] or MONO_SOLO_[NUMBER]
+MORNING				=	MORNING_[NUMBER]
+EVENING				=	EVENING_[NUMBER]
+TO ADVERTISEMENT		=	TO_AD_[NUMBER]
+TO NEWS				=	TO_NEWS_[NUMBER]
+ADVERTISEMENTS			= 	All in folder RADIO_ADVERTS
+NEWS				=	All in folder RADIO_NEWS
+
+//The stations I have already done:
+RADIO_01_CLASS_ROCK
+RADIO_02_POP
+RADIO_03_HIPHOP_NEW
+RADIO_04_PUNK
+RADIO_05_TALK_01 //For talk radio, you need to only set SONG and STINGER, the other categories are not present. I still need to make implementation for this in the application.
+

@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+    </COMReference>
+    <COMReference Include="{d37e2a3e-8545-3a39-9f4f-31827c9124ab}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>d37e2a3e-8545-3a39-9f4f-31827c9124ab</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
+    <PackageReference Include="coverlet.collector" Version="3.0.2" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GrandTheftAutoRadioForDesktop\GrandTheftAutoRadioForDesktop.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib">
+      <HintPath>..\GrandTheftAutoRadioForDesktop\obj\Debug\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

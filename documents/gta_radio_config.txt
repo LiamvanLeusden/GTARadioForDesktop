@@ -1,0 +1,22 @@
+GTARadioForDesktop configuration file. If you want to edit this; only edit the lines directly after the lines with colons.
+
+
+GTA Radio folder location. For example: D:\Documents\GTA_RADIO_EXTRACT:
+D:\Documenten\Git Repositories\PROJECT_FILES\GTA_RADIO_EXTRACT
+
+Following is the probability of different items. This must be a number between 0 and 100. For example 44 (not 044). They may not all be 0 (at least one must be 1 or higher).
+
+Song probability:
+70
+
+Stinger probability:
+45
+
+Quote probability:
+35
+
+News probability:
+10
+
+Advertisement probability:
+15
