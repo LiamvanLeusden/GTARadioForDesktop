@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\GitRepositories\\GTARadioForDesktop\\VisualStudio_Solution\\GrandTheftAutoRadioForDesktop\\GTARadioTest\\GTARadioTest.csproj": {}
+  },
+  "projects": {
+    "C:\\GitRepositories\\GTARadioForDesktop\\VisualStudio_Solution\\GrandTheftAutoRadioForDesktop\\GrandTheftAutoRadioForDesktop\\GrandTheftAutoRadioForDesktop.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\GitRepositories\\GTARadioForDesktop\\VisualStudio_Solution\\GrandTheftAutoRadioForDesktop\\GrandTheftAutoRadioForDesktop\\GrandTheftAutoRadioForDesktop.csproj",
+        "projectName": "GrandTheftAutoRadioForDesktop",
+        "projectPath": "C:\\GitRepositories\\GTARadioForDesktop\\VisualStudio_Solution\\GrandTheftAutoRadioForDesktop\\GrandTheftAutoRadioForDesktop\\GrandTheftAutoRadioForDesktop.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\GitRepositories\\GTARadioForDesktop\\VisualStudio_Solution\\GrandTheftAutoRadioForDesktop\\GTARadioTest\\GTARadioTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GitRepositories\\GTARadioForDesktop\\VisualStudio_Solution\\GrandTheftAutoRadioForDesktop\\GTARadioTest\\GTARadioTest.csproj",
+        "projectName": "GTARadioTest",
+        "projectPath": "C:\\GitRepositories\\GTARadioForDesktop\\VisualStudio_Solution\\GrandTheftAutoRadioForDesktop\\GTARadioTest\\GTARadioTest.csproj",
+        "packagesPath": "C:\\Users\\Liam\\.nuget\\packages\\",
+        "outputPath": "C:\\GitRepositories\\GTARadioForDesktop\\VisualStudio_Solution\\GrandTheftAutoRadioForDesktop\\GTARadioTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Liam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\GitRepositories\\GTARadioForDesktop\\VisualStudio_Solution\\GrandTheftAutoRadioForDesktop\\GrandTheftAutoRadioForDesktop\\GrandTheftAutoRadioForDesktop.csproj": {
+                "projectPath": "C:\\GitRepositories\\GTARadioForDesktop\\VisualStudio_Solution\\GrandTheftAutoRadioForDesktop\\GrandTheftAutoRadioForDesktop\\GrandTheftAutoRadioForDesktop.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
