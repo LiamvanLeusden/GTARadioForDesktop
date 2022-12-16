@@ -68,9 +68,9 @@ namespace GrandTheftAutoRadioForDesktop
             this.trcVolume = new System.Windows.Forms.TrackBar();
             this.lblStaticVolume = new System.Windows.Forms.Label();
             this.player = new AxWMPLib.AxWindowsMediaPlayer();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.lblDisplayValueTimeOfDayMSG = new System.Windows.Forms.Label();
+            this.lblStaticPreferences6 = new System.Windows.Forms.Label();
+            this.trcPreferencesTimeOfDayMSG = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.pctRadioLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesSong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesStinger)).BeginInit();
@@ -79,7 +79,7 @@ namespace GrandTheftAutoRadioForDesktop
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesNewsItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesTimeOfDayMSG)).BeginInit();
             this.SuspendLayout();
             // 
             // btnChooseFolder
@@ -209,7 +209,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.btnLoadPreferences.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.btnLoadPreferences.Location = new System.Drawing.Point(286, 57);
             this.btnLoadPreferences.Name = "btnLoadPreferences";
-            this.btnLoadPreferences.Size = new System.Drawing.Size(232, 23);
+            this.btnLoadPreferences.Size = new System.Drawing.Size(243, 23);
             this.btnLoadPreferences.TabIndex = 15;
             this.btnLoadPreferences.Text = "Load preferences from file";
             this.btnLoadPreferences.UseVisualStyleBackColor = true;
@@ -260,7 +260,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblStaticPreferences3.AutoSize = true;
             this.lblStaticPreferences3.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblStaticPreferences3.ForeColor = System.Drawing.Color.White;
-            this.lblStaticPreferences3.Location = new System.Drawing.Point(12, 181);
+            this.lblStaticPreferences3.Location = new System.Drawing.Point(12, 177);
             this.lblStaticPreferences3.Name = "lblStaticPreferences3";
             this.lblStaticPreferences3.Size = new System.Drawing.Size(200, 13);
             this.lblStaticPreferences3.TabIndex = 24;
@@ -296,7 +296,7 @@ namespace GrandTheftAutoRadioForDesktop
             // trcPreferencesQuote
             // 
             this.trcPreferencesQuote.LargeChange = 10;
-            this.trcPreferencesQuote.Location = new System.Drawing.Point(15, 197);
+            this.trcPreferencesQuote.Location = new System.Drawing.Point(15, 193);
             this.trcPreferencesQuote.Maximum = 100;
             this.trcPreferencesQuote.Name = "trcPreferencesQuote";
             this.trcPreferencesQuote.Size = new System.Drawing.Size(212, 45);
@@ -309,7 +309,7 @@ namespace GrandTheftAutoRadioForDesktop
             // trcPreferencesAdvertisement
             // 
             this.trcPreferencesAdvertisement.LargeChange = 10;
-            this.trcPreferencesAdvertisement.Location = new System.Drawing.Point(286, 197);
+            this.trcPreferencesAdvertisement.Location = new System.Drawing.Point(286, 193);
             this.trcPreferencesAdvertisement.Maximum = 100;
             this.trcPreferencesAdvertisement.Name = "trcPreferencesAdvertisement";
             this.trcPreferencesAdvertisement.Size = new System.Drawing.Size(212, 45);
@@ -322,7 +322,7 @@ namespace GrandTheftAutoRadioForDesktop
             // trcPreferencesNewsItem
             // 
             this.trcPreferencesNewsItem.LargeChange = 10;
-            this.trcPreferencesNewsItem.Location = new System.Drawing.Point(15, 261);
+            this.trcPreferencesNewsItem.Location = new System.Drawing.Point(286, 261);
             this.trcPreferencesNewsItem.Maximum = 100;
             this.trcPreferencesNewsItem.Name = "trcPreferencesNewsItem";
             this.trcPreferencesNewsItem.Size = new System.Drawing.Size(212, 45);
@@ -338,7 +338,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblStaticPreferences5.AutoSize = true;
             this.lblStaticPreferences5.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblStaticPreferences5.ForeColor = System.Drawing.Color.White;
-            this.lblStaticPreferences5.Location = new System.Drawing.Point(12, 245);
+            this.lblStaticPreferences5.Location = new System.Drawing.Point(283, 245);
             this.lblStaticPreferences5.Name = "lblStaticPreferences5";
             this.lblStaticPreferences5.Size = new System.Drawing.Size(225, 13);
             this.lblStaticPreferences5.TabIndex = 22;
@@ -351,7 +351,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblStaticPreferences4.AutoSize = true;
             this.lblStaticPreferences4.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblStaticPreferences4.ForeColor = System.Drawing.Color.White;
-            this.lblStaticPreferences4.Location = new System.Drawing.Point(283, 181);
+            this.lblStaticPreferences4.Location = new System.Drawing.Point(283, 177);
             this.lblStaticPreferences4.Name = "lblStaticPreferences4";
             this.lblStaticPreferences4.Size = new System.Drawing.Size(249, 13);
             this.lblStaticPreferences4.TabIndex = 23;
@@ -387,7 +387,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblDisplayValueNewsItem.AutoSize = true;
             this.lblDisplayValueNewsItem.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblDisplayValueNewsItem.ForeColor = System.Drawing.Color.White;
-            this.lblDisplayValueNewsItem.Location = new System.Drawing.Point(233, 261);
+            this.lblDisplayValueNewsItem.Location = new System.Drawing.Point(504, 261);
             this.lblDisplayValueNewsItem.Name = "lblDisplayValueNewsItem";
             this.lblDisplayValueNewsItem.Size = new System.Drawing.Size(14, 13);
             this.lblDisplayValueNewsItem.TabIndex = 29;
@@ -400,7 +400,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblDisplayValueQuote.AutoSize = true;
             this.lblDisplayValueQuote.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblDisplayValueQuote.ForeColor = System.Drawing.Color.White;
-            this.lblDisplayValueQuote.Location = new System.Drawing.Point(233, 197);
+            this.lblDisplayValueQuote.Location = new System.Drawing.Point(233, 193);
             this.lblDisplayValueQuote.Name = "lblDisplayValueQuote";
             this.lblDisplayValueQuote.Size = new System.Drawing.Size(14, 13);
             this.lblDisplayValueQuote.TabIndex = 30;
@@ -413,7 +413,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblDisplayValueAdvertisement.AutoSize = true;
             this.lblDisplayValueAdvertisement.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblDisplayValueAdvertisement.ForeColor = System.Drawing.Color.White;
-            this.lblDisplayValueAdvertisement.Location = new System.Drawing.Point(504, 197);
+            this.lblDisplayValueAdvertisement.Location = new System.Drawing.Point(504, 193);
             this.lblDisplayValueAdvertisement.Name = "lblDisplayValueAdvertisement";
             this.lblDisplayValueAdvertisement.Size = new System.Drawing.Size(14, 13);
             this.lblDisplayValueAdvertisement.TabIndex = 31;
@@ -435,9 +435,9 @@ namespace GrandTheftAutoRadioForDesktop
             // 
             // btnDebugShowPlayer
             // 
-            this.btnDebugShowPlayer.Location = new System.Drawing.Point(15, 301);
+            this.btnDebugShowPlayer.Location = new System.Drawing.Point(15, 312);
             this.btnDebugShowPlayer.Name = "btnDebugShowPlayer";
-            this.btnDebugShowPlayer.Size = new System.Drawing.Size(517, 23);
+            this.btnDebugShowPlayer.Size = new System.Drawing.Size(514, 37);
             this.btnDebugShowPlayer.TabIndex = 33;
             this.btnDebugShowPlayer.Text = "Toggle show WMP (debug)";
             this.btnDebugShowPlayer.UseVisualStyleBackColor = true;
@@ -518,43 +518,44 @@ namespace GrandTheftAutoRadioForDesktop
             this.player.Visible = false;
             this.player.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.player_PlayStateChange);
             // 
-            // label1
+            // lblDisplayValueTimeOfDayMSG
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(504, 261);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 13);
-            this.label1.TabIndex = 40;
-            this.label1.Text = "0";
-            this.label1.Visible = false;
+            this.lblDisplayValueTimeOfDayMSG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDisplayValueTimeOfDayMSG.AutoSize = true;
+            this.lblDisplayValueTimeOfDayMSG.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.lblDisplayValueTimeOfDayMSG.ForeColor = System.Drawing.Color.White;
+            this.lblDisplayValueTimeOfDayMSG.Location = new System.Drawing.Point(233, 261);
+            this.lblDisplayValueTimeOfDayMSG.Name = "lblDisplayValueTimeOfDayMSG";
+            this.lblDisplayValueTimeOfDayMSG.Size = new System.Drawing.Size(14, 13);
+            this.lblDisplayValueTimeOfDayMSG.TabIndex = 40;
+            this.lblDisplayValueTimeOfDayMSG.Text = "0";
+            this.lblDisplayValueTimeOfDayMSG.Visible = false;
             // 
-            // label2
+            // lblStaticPreferences6
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(283, 245);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(249, 13);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Set probability of occuring: Advertisement";
-            this.label2.Visible = false;
+            this.lblStaticPreferences6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStaticPreferences6.AutoSize = true;
+            this.lblStaticPreferences6.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.lblStaticPreferences6.ForeColor = System.Drawing.Color.White;
+            this.lblStaticPreferences6.Location = new System.Drawing.Point(12, 245);
+            this.lblStaticPreferences6.Name = "lblStaticPreferences6";
+            this.lblStaticPreferences6.Size = new System.Drawing.Size(249, 13);
+            this.lblStaticPreferences6.TabIndex = 39;
+            this.lblStaticPreferences6.Text = "Set probability of occuring: Time message";
+            this.lblStaticPreferences6.Visible = false;
             // 
-            // trackBar1
+            // trcPreferencesTimeOfDayMSG
             // 
-            this.trackBar1.LargeChange = 10;
-            this.trackBar1.Location = new System.Drawing.Point(286, 261);
-            this.trackBar1.Maximum = 100;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(212, 45);
-            this.trackBar1.SmallChange = 5;
-            this.trackBar1.TabIndex = 38;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trackBar1.Visible = false;
+            this.trcPreferencesTimeOfDayMSG.LargeChange = 10;
+            this.trcPreferencesTimeOfDayMSG.Location = new System.Drawing.Point(15, 261);
+            this.trcPreferencesTimeOfDayMSG.Maximum = 100;
+            this.trcPreferencesTimeOfDayMSG.Name = "trcPreferencesTimeOfDayMSG";
+            this.trcPreferencesTimeOfDayMSG.Size = new System.Drawing.Size(212, 45);
+            this.trcPreferencesTimeOfDayMSG.SmallChange = 5;
+            this.trcPreferencesTimeOfDayMSG.TabIndex = 38;
+            this.trcPreferencesTimeOfDayMSG.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trcPreferencesTimeOfDayMSG.Visible = false;
+            this.trcPreferencesTimeOfDayMSG.Scroll += new System.EventHandler(this.trcPreferencesTimeOfDayMSG_Scroll);
             // 
             // MainForm
             // 
@@ -563,9 +564,9 @@ namespace GrandTheftAutoRadioForDesktop
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(800, 448);
             this.Controls.Add(this.btnDebugShowPlayer);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.lblDisplayValueTimeOfDayMSG);
+            this.Controls.Add(this.lblStaticPreferences6);
+            this.Controls.Add(this.trcPreferencesTimeOfDayMSG);
             this.Controls.Add(this.lblStaticVolume);
             this.Controls.Add(this.btnToggleSettingsVisibility);
             this.Controls.Add(this.trcVolume);
@@ -610,7 +611,7 @@ namespace GrandTheftAutoRadioForDesktop
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesNewsItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesTimeOfDayMSG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -655,9 +656,9 @@ namespace GrandTheftAutoRadioForDesktop
         private System.Windows.Forms.SaveFileDialog dlgFileSave;
         private System.Windows.Forms.TrackBar trcVolume;
         private System.Windows.Forms.Label lblStaticVolume;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label lblDisplayValueTimeOfDayMSG;
+        private System.Windows.Forms.Label lblStaticPreferences6;
+        private System.Windows.Forms.TrackBar trcPreferencesTimeOfDayMSG;
     }
 }
 

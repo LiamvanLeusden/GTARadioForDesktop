@@ -44,6 +44,9 @@ namespace GrandTheftAutoRadioForDesktop
                 writer.WriteLine("ADVERTISEMENT_PROBABILITY:");
                 writer.WriteLine(Radio.RATIO_CHANCE_ADVERTISEMENT);
                 writer.WriteLine("");
+                writer.WriteLine("TIMEOFDAYMESSAGE_PROBABILITY:");
+                writer.WriteLine(Radio.RATIO_CHANCE_TIMEOFDAYMSG);
+                writer.WriteLine("");
                 writer.Close();
             }
         }
@@ -52,7 +55,7 @@ namespace GrandTheftAutoRadioForDesktop
         {
             string pathToRadioFolder = "ERROR";
             string[] lines = File.ReadAllLines(filePath);
-            if (lines.Length != 26)
+            if (lines.Length != 29)
             {
                 throw new NumberOfLinesException();
             }
@@ -63,6 +66,7 @@ namespace GrandTheftAutoRadioForDesktop
             Int32.TryParse(lines[18], out Radio.RATIO_CHANCE_QUOTE);
             Int32.TryParse(lines[21], out Radio.RATIO_CHANCE_NEWSITEM);
             Int32.TryParse(lines[24], out Radio.RATIO_CHANCE_ADVERTISEMENT);
+            Int32.TryParse(lines[27], out Radio.RATIO_CHANCE_TIMEOFDAYMSG);
 
             Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM;
             return pathToRadioFolder;

@@ -46,11 +46,13 @@ namespace GrandTheftAutoRadioForDesktop
                 trcPreferencesNewsItem.Value = Radio.RATIO_CHANCE_NEWSITEM;
                 trcPreferencesStinger.Value = Radio.RATIO_CHANCE_STINGER;
                 trcPreferencesAdvertisement.Value = Radio.RATIO_CHANCE_ADVERTISEMENT;
+                trcPreferencesTimeOfDayMSG.Value = Radio.RATIO_CHANCE_TIMEOFDAYMSG;
                 lblDisplayValueSong.Text = Radio.RATIO_CHANCE_SONG.ToString();
                 lblDisplayValueQuote.Text = Radio.RATIO_CHANCE_QUOTE.ToString();
                 lblDisplayValueNewsItem.Text = Radio.RATIO_CHANCE_NEWSITEM.ToString();
                 lblDisplayValueStinger.Text = Radio.RATIO_CHANCE_STINGER.ToString();
                 lblDisplayValueAdvertisement.Text = Radio.RATIO_CHANCE_ADVERTISEMENT.ToString();
+                lblDisplayValueTimeOfDayMSG.Text = Radio.RATIO_CHANCE_TIMEOFDAYMSG.ToString();
                 txtChooseFolder.Text = pathToRadioExtractFolder;
             }
             catch (ArgumentOutOfRangeException)
@@ -163,18 +165,21 @@ namespace GrandTheftAutoRadioForDesktop
                 lblStaticPreferences3.Visible = true;
                 lblStaticPreferences4.Visible = true;
                 lblStaticPreferences5.Visible = true;
+                lblStaticPreferences6.Visible = true;
 
                 lblDisplayValueSong.Visible = true;
                 lblDisplayValueStinger.Visible = true;
                 lblDisplayValueQuote.Visible = true;
                 lblDisplayValueAdvertisement.Visible = true;
                 lblDisplayValueNewsItem.Visible = true;
+                lblDisplayValueTimeOfDayMSG.Visible = true;
 
                 trcPreferencesSong.Visible = true;
                 trcPreferencesStinger.Visible = true;
                 trcPreferencesQuote.Visible = true;
                 trcPreferencesAdvertisement.Visible = true;
                 trcPreferencesNewsItem.Visible = true;
+                trcPreferencesTimeOfDayMSG.Visible = true;
             }
             else //From settings view back to default
             {
@@ -188,18 +193,21 @@ namespace GrandTheftAutoRadioForDesktop
                 lblStaticPreferences3.Visible = false;
                 lblStaticPreferences4.Visible = false;
                 lblStaticPreferences5.Visible = false;
+                lblStaticPreferences6.Visible = false;
 
                 lblDisplayValueSong.Visible = false;
                 lblDisplayValueStinger.Visible = false;
                 lblDisplayValueQuote.Visible = false;
                 lblDisplayValueAdvertisement.Visible = false;
                 lblDisplayValueNewsItem.Visible = false;
+                lblDisplayValueTimeOfDayMSG.Visible = false;
 
                 trcPreferencesSong.Visible = false;
                 trcPreferencesStinger.Visible = false;
                 trcPreferencesQuote.Visible = false;
                 trcPreferencesAdvertisement.Visible = false;
                 trcPreferencesNewsItem.Visible = false;
+                trcPreferencesTimeOfDayMSG.Visible = false;
             }
         }
 
@@ -207,35 +215,42 @@ namespace GrandTheftAutoRadioForDesktop
         {
             lblDisplayValueSong.Text = trcPreferencesSong.Value.ToString();
             Radio.RATIO_CHANCE_SONG = trcPreferencesSong.Value;
-            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM;
+            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM + Radio.RATIO_CHANCE_TIMEOFDAYMSG;
         }
 
         private void trcPreferencesQuote_Scroll(object sender, EventArgs e)
         {
             lblDisplayValueQuote.Text = trcPreferencesQuote.Value.ToString();
             Radio.RATIO_CHANCE_QUOTE = trcPreferencesQuote.Value;
-            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM;
+            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM + Radio.RATIO_CHANCE_TIMEOFDAYMSG;
         }
 
         private void trcPreferencesNewsItem_Scroll(object sender, EventArgs e)
         {
             lblDisplayValueNewsItem.Text = trcPreferencesNewsItem.Value.ToString();
             Radio.RATIO_CHANCE_NEWSITEM = trcPreferencesNewsItem.Value;
-            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM;
+            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM + Radio.RATIO_CHANCE_TIMEOFDAYMSG;
         }
 
         private void trcPreferencesStinger_Scroll(object sender, EventArgs e)
         {
             lblDisplayValueStinger.Text = trcPreferencesStinger.Value.ToString();
             Radio.RATIO_CHANCE_STINGER = trcPreferencesStinger.Value;
-            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM;
+            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM + Radio.RATIO_CHANCE_TIMEOFDAYMSG;
         }
 
         private void trcPreferencesAdvertisement_Scroll(object sender, EventArgs e)
         {
             lblDisplayValueAdvertisement.Text = trcPreferencesAdvertisement.Value.ToString();
             Radio.RATIO_CHANCE_ADVERTISEMENT = trcPreferencesAdvertisement.Value;
-            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM;
+            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM + Radio.RATIO_CHANCE_TIMEOFDAYMSG;
+        }
+
+        private void trcPreferencesTimeOfDayMSG_Scroll(object sender, EventArgs e)
+        {
+            lblDisplayValueTimeOfDayMSG.Text = trcPreferencesTimeOfDayMSG.Value.ToString();
+            Radio.RATIO_CHANCE_TIMEOFDAYMSG = trcPreferencesTimeOfDayMSG.Value;
+            Radio.RATIO_TOTAL = Radio.RATIO_CHANCE_SONG + Radio.RATIO_CHANCE_STINGER + Radio.RATIO_CHANCE_QUOTE + Radio.RATIO_CHANCE_ADVERTISEMENT + Radio.RATIO_CHANCE_NEWSITEM + Radio.RATIO_CHANCE_TIMEOFDAYMSG;
         }
 
         private void btnPause_Click(object sender, EventArgs e)
@@ -273,6 +288,14 @@ namespace GrandTheftAutoRadioForDesktop
         private void tmrCheckError_Tick(object sender, EventArgs e)
         {
             lblError.Text = Radio.error;
+            int[] probabilities = { Radio.RATIO_CHANCE_SONG, Radio.RATIO_CHANCE_STINGER, Radio.RATIO_CHANCE_QUOTE, Radio.RATIO_CHANCE_ADVERTISEMENT, Radio.RATIO_CHANCE_NEWSITEM, Radio.RATIO_CHANCE_TIMEOFDAYMSG };
+            if (probabilities.Count(n => n > 0) < 2)
+            {
+                Radio.RATIO_CHANCE_SONG = 10;
+                Radio.RATIO_CHANCE_STINGER = 10;
+                UpdateSliders();
+                MessageBox.Show("You must have at least two categories of items that are not at 0 probability.");
+            }
         }
 
         private void btnStart1_Click(object sender, EventArgs e)

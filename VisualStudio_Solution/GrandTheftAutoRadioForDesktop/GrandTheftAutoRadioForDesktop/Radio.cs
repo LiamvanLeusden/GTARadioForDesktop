@@ -15,16 +15,20 @@ namespace GrandTheftAutoRadioForDesktop
         readonly private AxWindowsMediaPlayer localPlayer;
         public static string error = "";
         public bool RadioPlaying { get; set; }
+        private int previousTypeOfItem = 0;
+        private IPlayable selectedSong = null;
+        private IPlayable previousSong = null;
 
         //There are 5 types of playable items. Each can be set to a priority between 0 and 100, with a higher number being a higher probability
         //It is also possible to have multiple types with the same priority level.
-        public static int RATIO_CHANCE_SONG = 75;
-        public static int RATIO_CHANCE_STINGER = 50;
-        public static int RATIO_CHANCE_QUOTE = 25;
-        public static int RATIO_CHANCE_ADVERTISEMENT = 10;
-        public static int RATIO_CHANCE_NEWSITEM = 5;
+        public static int RATIO_CHANCE_SONG = 55;
+        public static int RATIO_CHANCE_STINGER = 60;
+        public static int RATIO_CHANCE_QUOTE = 35;
+        public static int RATIO_CHANCE_ADVERTISEMENT = 25;
+        public static int RATIO_CHANCE_NEWSITEM = 10;
+        public static int RATIO_CHANCE_TIMEOFDAYMSG = 40;
 
-        public static int RATIO_TOTAL = RATIO_CHANCE_SONG + RATIO_CHANCE_STINGER + RATIO_CHANCE_QUOTE + RATIO_CHANCE_ADVERTISEMENT + RATIO_CHANCE_NEWSITEM;
+        public static int RATIO_TOTAL = RATIO_CHANCE_SONG + RATIO_CHANCE_STINGER + RATIO_CHANCE_QUOTE + RATIO_CHANCE_ADVERTISEMENT + RATIO_CHANCE_NEWSITEM + RATIO_CHANCE_TIMEOFDAYMSG;
 
         private readonly List<IPlayable> Songs = new List<IPlayable>();
         private readonly List<IPlayable> Stingers = new List<IPlayable>();
@@ -133,32 +137,71 @@ namespace GrandTheftAutoRadioForDesktop
         {
             int x = rnd.Next(0, RATIO_TOTAL);
 
-            //TODO: Make implementation for non standard radio formats
-            //TODO: Make sure two of the same type of item can't play consecutively
-            //TODO: Make sure the same song can't play consecutively
+            //TODO: Make implementation of radio stations that consist of just a couple of premade files.
 
             try
             {
                 if ((x -= RATIO_CHANCE_SONG) < 0)
                 {
-                    await Songs.ElementAt(rnd.Next(Songs.Count())).Play(localPlayer);
+                    selectedSong = Songs.ElementAt(rnd.Next(Songs.Count()));
+                    if (selectedSong != previousSong)
+                    {
+                        await selectedSong.Play(localPlayer);
+                    }
+                    previousSong = selectedSong;
+
                 }
                 else if ((x -= RATIO_CHANCE_STINGER) < 0)
                 {
-                    await Stingers.ElementAt(rnd.Next(Stingers.Count())).Play(localPlayer);
+                    if (previousTypeOfItem != 1)
+                    {
+                        await Stingers.ElementAt(rnd.Next(Stingers.Count())).Play(localPlayer);
+                        previousTypeOfItem = 1;
+                    }
                 }
                 else if ((x -= RATIO_CHANCE_QUOTE) < 0)
                 {
-                    //TODO: Time from computer to do morning or evening
-                    await QuotesGeneral.ElementAt(rnd.Next(QuotesGeneral.Count())).Play(localPlayer);
+                    if (previousTypeOfItem != 2)
+                    {
+                        await QuotesGeneral.ElementAt(rnd.Next(QuotesGeneral.Count())).Play(localPlayer);
+                        previousTypeOfItem = 2;
+                    }
                 }
                 else if ((x -= RATIO_CHANCE_ADVERTISEMENT) < 0)
                 {
-                    await Advertisements.ElementAt(rnd.Next(Advertisements.Count())).Play(localPlayer);
+                    if (previousTypeOfItem != 3)
+                    {
+                        await Advertisements.ElementAt(rnd.Next(Advertisements.Count())).Play(localPlayer);
+                        previousTypeOfItem = 3;
+                    }
                 }
                 else if ((x -= RATIO_CHANCE_NEWSITEM) < 0)
                 {
-                    await NewsItems.ElementAt(rnd.Next(NewsItems.Count())).Play(localPlayer);
+                    if (previousTypeOfItem != 4)
+                    {
+                        await NewsItems.ElementAt(rnd.Next(NewsItems.Count())).Play(localPlayer);
+                        previousTypeOfItem = 4;
+                    }
+                }
+                else if ((x -= RATIO_CHANCE_TIMEOFDAYMSG) < 0)
+                {
+                    if (previousTypeOfItem != 5)
+                    {
+                        int currentHour = DateTime.Now.Hour;
+                        if (currentHour < 12)
+                        {
+                            await QuotesMorning.ElementAt(rnd.Next(QuotesMorning.Count())).Play(localPlayer);
+                        }
+                        else if (currentHour > 12)
+                        {
+                            await QuotesEvening.ElementAt(rnd.Next(QuotesEvening.Count())).Play(localPlayer);
+                        }
+                        else
+                        {
+                            throw new ArgumentOutOfRangeException();
+                        }
+                        previousTypeOfItem = 5;
+                    }
                 }
                 else
                 {

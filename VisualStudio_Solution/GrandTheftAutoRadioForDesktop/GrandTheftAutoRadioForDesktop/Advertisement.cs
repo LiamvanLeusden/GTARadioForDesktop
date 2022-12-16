@@ -19,12 +19,14 @@ namespace GrandTheftAutoRadioForDesktop
 
         public async Task Play(AxWindowsMediaPlayer player)
         {
-            int numberOfIntro = rnd.Next(AdvertisementIntros.Count); //Randomly select an intro from the list
-            string introFilePath = AdvertisementIntros.ElementAt(numberOfIntro).fullPath;
-            player.URL = introFilePath;
+            if (AdvertisementIntros.Count > 0)
+            {
+                int numberOfIntro = rnd.Next(AdvertisementIntros.Count); //Randomly select an intro from the list
+                string introFilePath = AdvertisementIntros.ElementAt(numberOfIntro).fullPath;
+                player.URL = introFilePath;
+                await Radio.PlayAfterThis();
+            }
 
-            //This task is necessary because the while (!audioFileFinished) will otherwise run in the UI and hang the app.
-            await Radio.PlayAfterThis();
             player.URL = fullPath;
             await Radio.PlayAfterThis();
         }
