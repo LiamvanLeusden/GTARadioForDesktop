@@ -21,7 +21,7 @@ namespace GrandTheftAutoRadioForDesktop
 
         //There are 5 types of playable items. Each can be set to a priority between 0 and 100, with a higher number being a higher probability
         //It is also possible to have multiple types with the same priority level.
-        public static int RATIO_CHANCE_SONG = 55;
+        public static int RATIO_CHANCE_SONG = 70;
         public static int RATIO_CHANCE_STINGER = 60;
         public static int RATIO_CHANCE_QUOTE = 35;
         public static int RATIO_CHANCE_ADVERTISEMENT = 25;
@@ -147,9 +147,8 @@ namespace GrandTheftAutoRadioForDesktop
                     if (selectedSong != previousSong)
                     {
                         await selectedSong.Play(localPlayer);
+                        previousSong = selectedSong;
                     }
-                    previousSong = selectedSong;
-
                 }
                 else if ((x -= RATIO_CHANCE_STINGER) < 0)
                 {

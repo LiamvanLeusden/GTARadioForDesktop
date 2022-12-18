@@ -359,5 +359,25 @@ namespace GrandTheftAutoRadioForDesktop
             volume = trcVolume.Value;
             SetVolume();
         }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.MediaPlayPause)
+            {
+                if (btnStart.Enabled == false) 
+                {
+                    btnPause_Click(sender, e);
+                }
+                else
+                {
+                    PlayButtonAction();
+                }
+                
+            }
+            else if (e.KeyCode == Keys.MediaNextTrack)
+            {
+                btnSkip_Click(sender, e);
+            }
+        }
     }
 }

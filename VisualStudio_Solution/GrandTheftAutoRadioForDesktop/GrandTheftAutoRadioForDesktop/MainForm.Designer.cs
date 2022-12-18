@@ -467,7 +467,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.btnStart1.Name = "btnStart1";
             this.btnStart1.Size = new System.Drawing.Size(201, 23);
             this.btnStart1.TabIndex = 35;
-            this.btnStart1.Text = "Secondairy button to start";
+            this.btnStart1.Text = "Secondary button to start";
             this.btnStart1.UseVisualStyleBackColor = true;
             this.btnStart1.Visible = false;
             this.btnStart1.Click += new System.EventHandler(this.btnStart1_Click);
@@ -599,10 +599,12 @@ namespace GrandTheftAutoRadioForDesktop
             this.Controls.Add(this.trcPreferencesSong);
             this.Controls.Add(this.pctRadioLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "GrandTheftAutoRadioForDesktop";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pctRadioLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesSong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesStinger)).EndInit();
