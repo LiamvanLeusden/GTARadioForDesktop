@@ -13,7 +13,6 @@ namespace GrandTheftAutoRadioForDesktop
     {
         private readonly List<AudioFile> songIntros = new List<AudioFile>();
         private string SongName { get; set; }  //This is public only for unit testing.
-        private readonly Random rnd = new Random();
 
         public Song(string pathToSong, string pathToRadioFolder) : base("Song", pathToSong) //CONSTRUCTOR
         {
@@ -39,7 +38,7 @@ namespace GrandTheftAutoRadioForDesktop
             //TODO: Make it a possibility to play a song without an intro (lower probability?)
             if (songIntros.Count != 0)
             {
-                int numberOfIntro = rnd.Next(songIntros.Count); //Randomly select an intro from the list
+                int numberOfIntro = Radio.rnd.Next(0, songIntros.Count); //Randomly select an intro from the list
                 string introFilePath = songIntros.ElementAt(numberOfIntro).fullPath;
                 player.URL = introFilePath;
             }

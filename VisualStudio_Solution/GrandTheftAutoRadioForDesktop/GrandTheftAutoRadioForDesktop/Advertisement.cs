@@ -9,7 +9,6 @@ namespace GrandTheftAutoRadioForDesktop
 {
     class Advertisement : AudioFile, IPlayable
     {
-        private readonly Random rnd = new Random();
         private readonly List<AudioFile> AdvertisementIntros;
 
         public Advertisement(string pathToFile, List<AudioFile> intros) : base("Advertisement", pathToFile) //CONSTRUCTOR
@@ -21,7 +20,7 @@ namespace GrandTheftAutoRadioForDesktop
         {
             if (AdvertisementIntros.Count > 0)
             {
-                int numberOfIntro = rnd.Next(AdvertisementIntros.Count); //Randomly select an intro from the list
+                int numberOfIntro = Radio.rnd.Next(0, AdvertisementIntros.Count); //Randomly select an intro from the list
                 string introFilePath = AdvertisementIntros.ElementAt(numberOfIntro).fullPath;
                 player.URL = introFilePath;
                 await Radio.PlayAfterThis();

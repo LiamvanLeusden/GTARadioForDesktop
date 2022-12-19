@@ -10,7 +10,8 @@ namespace GrandTheftAutoRadioForDesktop
 {
     public class Radio //TODO: This is public only for unit testing.
     {
-        private readonly Random rnd = new Random();
+        public static Random rnd = new Random();
+
         public static bool AudioFileFinished { get; set; }
         readonly private AxWindowsMediaPlayer localPlayer;
         public static string error = "";

@@ -103,9 +103,9 @@ namespace GrandTheftAutoRadioForDesktop
             // 
             this.txtChooseFolder.Enabled = false;
             this.txtChooseFolder.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.txtChooseFolder.Location = new System.Drawing.Point(12, 12);
+            this.txtChooseFolder.Location = new System.Drawing.Point(7, 12);
             this.txtChooseFolder.Name = "txtChooseFolder";
-            this.txtChooseFolder.Size = new System.Drawing.Size(695, 21);
+            this.txtChooseFolder.Size = new System.Drawing.Size(700, 21);
             this.txtChooseFolder.TabIndex = 1;
             this.txtChooseFolder.Text = "<No folder chosen, GTA radio will not work!>";
             // 
@@ -195,9 +195,9 @@ namespace GrandTheftAutoRadioForDesktop
             // btnSavePreferences
             // 
             this.btnSavePreferences.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.btnSavePreferences.Location = new System.Drawing.Point(15, 57);
+            this.btnSavePreferences.Location = new System.Drawing.Point(7, 57);
             this.btnSavePreferences.Name = "btnSavePreferences";
-            this.btnSavePreferences.Size = new System.Drawing.Size(232, 23);
+            this.btnSavePreferences.Size = new System.Drawing.Size(258, 23);
             this.btnSavePreferences.TabIndex = 12;
             this.btnSavePreferences.Text = "Save preferences to file";
             this.btnSavePreferences.UseVisualStyleBackColor = true;
@@ -207,9 +207,9 @@ namespace GrandTheftAutoRadioForDesktop
             // btnLoadPreferences
             // 
             this.btnLoadPreferences.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.btnLoadPreferences.Location = new System.Drawing.Point(286, 57);
+            this.btnLoadPreferences.Location = new System.Drawing.Point(271, 57);
             this.btnLoadPreferences.Name = "btnLoadPreferences";
-            this.btnLoadPreferences.Size = new System.Drawing.Size(243, 23);
+            this.btnLoadPreferences.Size = new System.Drawing.Size(258, 23);
             this.btnLoadPreferences.TabIndex = 15;
             this.btnLoadPreferences.Text = "Load preferences from file";
             this.btnLoadPreferences.UseVisualStyleBackColor = true;
@@ -231,7 +231,7 @@ namespace GrandTheftAutoRadioForDesktop
             // trcPreferencesSong
             // 
             this.trcPreferencesSong.LargeChange = 10;
-            this.trcPreferencesSong.Location = new System.Drawing.Point(15, 124);
+            this.trcPreferencesSong.Location = new System.Drawing.Point(24, 124);
             this.trcPreferencesSong.Maximum = 100;
             this.trcPreferencesSong.Name = "trcPreferencesSong";
             this.trcPreferencesSong.Size = new System.Drawing.Size(212, 45);
@@ -260,7 +260,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblStaticPreferences3.AutoSize = true;
             this.lblStaticPreferences3.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblStaticPreferences3.ForeColor = System.Drawing.Color.White;
-            this.lblStaticPreferences3.Location = new System.Drawing.Point(12, 177);
+            this.lblStaticPreferences3.Location = new System.Drawing.Point(21, 177);
             this.lblStaticPreferences3.Name = "lblStaticPreferences3";
             this.lblStaticPreferences3.Size = new System.Drawing.Size(200, 13);
             this.lblStaticPreferences3.TabIndex = 24;
@@ -286,7 +286,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblStaticPreferences1.AutoSize = true;
             this.lblStaticPreferences1.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblStaticPreferences1.ForeColor = System.Drawing.Color.White;
-            this.lblStaticPreferences1.Location = new System.Drawing.Point(12, 108);
+            this.lblStaticPreferences1.Location = new System.Drawing.Point(21, 108);
             this.lblStaticPreferences1.Name = "lblStaticPreferences1";
             this.lblStaticPreferences1.Size = new System.Drawing.Size(195, 13);
             this.lblStaticPreferences1.TabIndex = 26;
@@ -296,7 +296,7 @@ namespace GrandTheftAutoRadioForDesktop
             // trcPreferencesQuote
             // 
             this.trcPreferencesQuote.LargeChange = 10;
-            this.trcPreferencesQuote.Location = new System.Drawing.Point(15, 193);
+            this.trcPreferencesQuote.Location = new System.Drawing.Point(24, 193);
             this.trcPreferencesQuote.Maximum = 100;
             this.trcPreferencesQuote.Name = "trcPreferencesQuote";
             this.trcPreferencesQuote.Size = new System.Drawing.Size(212, 45);
@@ -374,7 +374,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblDisplayValueSong.AutoSize = true;
             this.lblDisplayValueSong.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblDisplayValueSong.ForeColor = System.Drawing.Color.White;
-            this.lblDisplayValueSong.Location = new System.Drawing.Point(233, 124);
+            this.lblDisplayValueSong.Location = new System.Drawing.Point(242, 124);
             this.lblDisplayValueSong.Name = "lblDisplayValueSong";
             this.lblDisplayValueSong.Size = new System.Drawing.Size(14, 13);
             this.lblDisplayValueSong.TabIndex = 28;
@@ -400,7 +400,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblDisplayValueQuote.AutoSize = true;
             this.lblDisplayValueQuote.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblDisplayValueQuote.ForeColor = System.Drawing.Color.White;
-            this.lblDisplayValueQuote.Location = new System.Drawing.Point(233, 193);
+            this.lblDisplayValueQuote.Location = new System.Drawing.Point(242, 193);
             this.lblDisplayValueQuote.Name = "lblDisplayValueQuote";
             this.lblDisplayValueQuote.Size = new System.Drawing.Size(14, 13);
             this.lblDisplayValueQuote.TabIndex = 30;
@@ -435,9 +435,9 @@ namespace GrandTheftAutoRadioForDesktop
             // 
             // btnDebugShowPlayer
             // 
-            this.btnDebugShowPlayer.Location = new System.Drawing.Point(15, 312);
+            this.btnDebugShowPlayer.Location = new System.Drawing.Point(7, 312);
             this.btnDebugShowPlayer.Name = "btnDebugShowPlayer";
-            this.btnDebugShowPlayer.Size = new System.Drawing.Size(514, 37);
+            this.btnDebugShowPlayer.Size = new System.Drawing.Size(522, 37);
             this.btnDebugShowPlayer.TabIndex = 33;
             this.btnDebugShowPlayer.Text = "Toggle show WMP (debug)";
             this.btnDebugShowPlayer.UseVisualStyleBackColor = true;
@@ -524,7 +524,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblDisplayValueTimeOfDayMSG.AutoSize = true;
             this.lblDisplayValueTimeOfDayMSG.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblDisplayValueTimeOfDayMSG.ForeColor = System.Drawing.Color.White;
-            this.lblDisplayValueTimeOfDayMSG.Location = new System.Drawing.Point(233, 261);
+            this.lblDisplayValueTimeOfDayMSG.Location = new System.Drawing.Point(242, 261);
             this.lblDisplayValueTimeOfDayMSG.Name = "lblDisplayValueTimeOfDayMSG";
             this.lblDisplayValueTimeOfDayMSG.Size = new System.Drawing.Size(14, 13);
             this.lblDisplayValueTimeOfDayMSG.TabIndex = 40;
@@ -537,7 +537,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblStaticPreferences6.AutoSize = true;
             this.lblStaticPreferences6.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblStaticPreferences6.ForeColor = System.Drawing.Color.White;
-            this.lblStaticPreferences6.Location = new System.Drawing.Point(12, 245);
+            this.lblStaticPreferences6.Location = new System.Drawing.Point(21, 245);
             this.lblStaticPreferences6.Name = "lblStaticPreferences6";
             this.lblStaticPreferences6.Size = new System.Drawing.Size(249, 13);
             this.lblStaticPreferences6.TabIndex = 39;
@@ -547,7 +547,7 @@ namespace GrandTheftAutoRadioForDesktop
             // trcPreferencesTimeOfDayMSG
             // 
             this.trcPreferencesTimeOfDayMSG.LargeChange = 10;
-            this.trcPreferencesTimeOfDayMSG.Location = new System.Drawing.Point(15, 261);
+            this.trcPreferencesTimeOfDayMSG.Location = new System.Drawing.Point(24, 261);
             this.trcPreferencesTimeOfDayMSG.Maximum = 100;
             this.trcPreferencesTimeOfDayMSG.Name = "trcPreferencesTimeOfDayMSG";
             this.trcPreferencesTimeOfDayMSG.Size = new System.Drawing.Size(212, 45);
