@@ -67,10 +67,12 @@ namespace GrandTheftAutoRadioForDesktop
             this.dlgFileSave = new System.Windows.Forms.SaveFileDialog();
             this.trcVolume = new System.Windows.Forms.TrackBar();
             this.lblStaticVolume = new System.Windows.Forms.Label();
-            this.player = new AxWMPLib.AxWindowsMediaPlayer();
             this.lblDisplayValueTimeOfDayMSG = new System.Windows.Forms.Label();
             this.lblStaticPreferences6 = new System.Windows.Forms.Label();
             this.trcPreferencesTimeOfDayMSG = new System.Windows.Forms.TrackBar();
+            this.lblStaticSelectGame = new System.Windows.Forms.Label();
+            this.cbbSelectGame = new System.Windows.Forms.ComboBox();
+            this.player = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.pctRadioLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesSong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesStinger)).BeginInit();
@@ -78,8 +80,8 @@ namespace GrandTheftAutoRadioForDesktop
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesAdvertisement)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesNewsItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcVolume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesTimeOfDayMSG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             this.SuspendLayout();
             // 
             // btnChooseFolder
@@ -146,9 +148,8 @@ namespace GrandTheftAutoRadioForDesktop
             "The Lowdown 91.1",
             "Radio Mirror Park",
             "Space 103.2",
-            "Vinewood Boulevard Radio",
-            "(DEBUG): To test out of range"});
-            this.cbbSelectStation.Location = new System.Drawing.Point(587, 78);
+            "Vinewood Boulevard Radio"});
+            this.cbbSelectStation.Location = new System.Drawing.Point(587, 140);
             this.cbbSelectStation.Name = "cbbSelectStation";
             this.cbbSelectStation.Size = new System.Drawing.Size(201, 21);
             this.cbbSelectStation.TabIndex = 7;
@@ -160,7 +161,7 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblStaticSelectStation.AutoSize = true;
             this.lblStaticSelectStation.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.lblStaticSelectStation.ForeColor = System.Drawing.Color.White;
-            this.lblStaticSelectStation.Location = new System.Drawing.Point(584, 62);
+            this.lblStaticSelectStation.Location = new System.Drawing.Point(584, 124);
             this.lblStaticSelectStation.Name = "lblStaticSelectStation";
             this.lblStaticSelectStation.Size = new System.Drawing.Size(133, 13);
             this.lblStaticSelectStation.TabIndex = 8;
@@ -463,7 +464,7 @@ namespace GrandTheftAutoRadioForDesktop
             // 
             // btnStart1
             // 
-            this.btnStart1.Location = new System.Drawing.Point(587, 113);
+            this.btnStart1.Location = new System.Drawing.Point(587, 193);
             this.btnStart1.Name = "btnStart1";
             this.btnStart1.Size = new System.Drawing.Size(201, 23);
             this.btnStart1.TabIndex = 35;
@@ -506,18 +507,6 @@ namespace GrandTheftAutoRadioForDesktop
             this.lblStaticVolume.TabIndex = 37;
             this.lblStaticVolume.Text = "Volume:";
             // 
-            // player
-            // 
-            this.player.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.player.Enabled = true;
-            this.player.Location = new System.Drawing.Point(0, 383);
-            this.player.Name = "player";
-            this.player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
-            this.player.Size = new System.Drawing.Size(800, 65);
-            this.player.TabIndex = 2;
-            this.player.Visible = false;
-            this.player.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.player_PlayStateChange);
-            // 
             // lblDisplayValueTimeOfDayMSG
             // 
             this.lblDisplayValueTimeOfDayMSG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -557,12 +546,53 @@ namespace GrandTheftAutoRadioForDesktop
             this.trcPreferencesTimeOfDayMSG.Visible = false;
             this.trcPreferencesTimeOfDayMSG.Scroll += new System.EventHandler(this.trcPreferencesTimeOfDayMSG_Scroll);
             // 
+            // lblStaticSelectGame
+            // 
+            this.lblStaticSelectGame.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStaticSelectGame.AutoSize = true;
+            this.lblStaticSelectGame.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.lblStaticSelectGame.ForeColor = System.Drawing.Color.White;
+            this.lblStaticSelectGame.Location = new System.Drawing.Point(584, 57);
+            this.lblStaticSelectGame.Name = "lblStaticSelectGame";
+            this.lblStaticSelectGame.Size = new System.Drawing.Size(94, 13);
+            this.lblStaticSelectGame.TabIndex = 42;
+            this.lblStaticSelectGame.Text = "Select a game:";
+            // 
+            // cbbSelectGame
+            // 
+            this.cbbSelectGame.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbbSelectGame.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbSelectGame.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.cbbSelectGame.ForeColor = System.Drawing.Color.Black;
+            this.cbbSelectGame.FormattingEnabled = true;
+            this.cbbSelectGame.Items.AddRange(new object[] {
+            "Grand Theft Auto V",
+            "Grand Theft Auto: San Andreas"});
+            this.cbbSelectGame.Location = new System.Drawing.Point(587, 73);
+            this.cbbSelectGame.Name = "cbbSelectGame";
+            this.cbbSelectGame.Size = new System.Drawing.Size(201, 21);
+            this.cbbSelectGame.TabIndex = 41;
+            // 
+            // player
+            // 
+            this.player.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.player.Enabled = true;
+            this.player.Location = new System.Drawing.Point(0, 383);
+            this.player.Name = "player";
+            this.player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
+            this.player.Size = new System.Drawing.Size(800, 65);
+            this.player.TabIndex = 2;
+            this.player.Visible = false;
+            this.player.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.player_PlayStateChange);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(800, 448);
+            this.Controls.Add(this.lblStaticSelectGame);
+            this.Controls.Add(this.cbbSelectGame);
             this.Controls.Add(this.btnDebugShowPlayer);
             this.Controls.Add(this.lblDisplayValueTimeOfDayMSG);
             this.Controls.Add(this.lblStaticPreferences6);
@@ -612,8 +642,8 @@ namespace GrandTheftAutoRadioForDesktop
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesAdvertisement)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesNewsItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcVolume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trcPreferencesTimeOfDayMSG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -661,6 +691,8 @@ namespace GrandTheftAutoRadioForDesktop
         private System.Windows.Forms.Label lblDisplayValueTimeOfDayMSG;
         private System.Windows.Forms.Label lblStaticPreferences6;
         private System.Windows.Forms.TrackBar trcPreferencesTimeOfDayMSG;
+        private System.Windows.Forms.Label lblStaticSelectGame;
+        private System.Windows.Forms.ComboBox cbbSelectGame;
     }
 }
 
